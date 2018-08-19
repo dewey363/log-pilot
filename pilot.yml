@@ -1,0 +1,17 @@
+#pilot nothing
+#filebat
+filebeat:
+  - name: "filebeatForContainer"
+    - confpath: "/opt/log/filebeatForContainer"
+	  - logpath: "/opt/log/filebeatForContainer/log"
+	  - datapath: "/opt/log/filebeatForContainer/data"
+	  - loglevel: "INFO"
+	  - reloadtime: "10s"
+
+
+  - name: "filebeatForPhysics"
+    - confpath: "/opt/log/filebeatForPhysics"
+	  - logpath: "/opt/log/filebeatForPhysics/log"
+	  - datapath: "/opt/log/filebeatForPhysics/data"
+	  - loglevel: "INFO"
+	  - reloadtime: "10s"
